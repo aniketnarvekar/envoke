@@ -23,19 +23,19 @@ Return an value of environment variable if present else raise `undefined-env`
 condition with `SET-ENV` restart. On selection of `SET-ENV` restart. allows
 interactively set new value for respective environment variable.
 
-### (setf getenv)
+#### (setf getenv)
 
 Set value for enviroment variable. See `uiop:getenv`.
 
-### undefined-env
+#### undefined-env
 
 A condition object which will raised by `GETENV` function if env does not
 exists.
 
-### undfined-env-name
+#### undfined-env-name
 
 A method that return enviroment variable name from `undefined-env` condition.
 
-### invoke-set-env-restart
+#### invoke-set-env-restart
 
 Invoke `SET-ENV` restart with NEW-VALUE for CONDITION if present in the scope.
